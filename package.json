@@ -1,0 +1,35 @@
+{
+  "name": "@svidgen/reflect",
+  "version": "1.0.0",
+  "description": "Infects an object with a multi-cast property and method mirroring.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "qunit tests/index.js",
+    "build:watch": "rimraf www/index.js && webpack --mode development --progress --watch -o www --entry ./lib/index.js --entry ./tests/www.js",
+    "serve": "live-server ./www",
+    "test:web": "concurrently -k -p \"[{name}]\" -n \"Build,Serve\" -c \"cyan.bold,green.bold\" \"npm run build:watch\" \"npm run serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svidgen/reflect.git"
+  },
+  "author": "Jon Wire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svidgen/reflect/issues"
+  },
+  "homepage": "https://github.com/svidgen/reflect#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "jsdom": "^16.6.0",
+    "live-server": "^1.2.1",
+    "qunit": "^2.16.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
