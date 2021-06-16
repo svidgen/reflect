@@ -2,7 +2,7 @@
   "name": "@svidgen/reflect",
   "version": "1.0.0",
   "description": "Infects an object with a multi-cast property and method mirroring.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "tests"
