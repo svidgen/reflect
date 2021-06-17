@@ -1,5 +1,5 @@
 {
-  "name": "@svidgen/reflect",
+  "name": "wirejs-reflect",
   "version": "1.0.0",
   "description": "Infects an object with a multi-cast property and method mirroring.",
   "main": "lib/index.js",
